@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --copy-btn-margin: 10px;
+  --copy-btn-margin: 8px;
 }
 
 @layer base {
@@ -161,7 +161,7 @@ article img {
 }
 
 .copy-btn {
-  @apply w-[30px] fixed;
+  @apply w-[24px] fixed;
   left: calc(100% - var(--copy-btn-margin));
   transform: translateX(-100%);
 }
