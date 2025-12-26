@@ -98,7 +98,13 @@ article {
 
 .animate.show {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* После завершения анимации убираем transition на transform, чтобы избежать скачков на мобильных */
+.animate.show.animated-done {
+  transition: opacity 1s ease;
 }
 
 article img {
