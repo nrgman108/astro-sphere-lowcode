@@ -101,6 +101,15 @@ article {
   transform: none;
 }
 
+/* Hero текст — только fade, без смещения, чтобы не было скачков на мобильных */
+.hero-text {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.hero-text.show {
+  opacity: 1;
+}
 
 article img {
   padding-top: 20px;
