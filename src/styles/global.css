@@ -99,12 +99,16 @@ article {
 .animate.show {
   opacity: 1;
   transform: none;
-  transition: opacity 1s ease, transform 1s ease;
 }
 
-/* После завершения анимации убираем transition на transform, чтобы избежать скачков на мобильных */
-.animate.show.animated-done {
+/* Hero контент — анимация только opacity, без transform (предотвращает скачки на мобильных) */
+.hero-content {
+  opacity: 0;
   transition: opacity 1s ease;
+}
+
+.hero-content.show {
+  opacity: 1;
 }
 
 article img {
