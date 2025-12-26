@@ -67,9 +67,10 @@ const stack = [
   </div>
 
   <script is:inline src="/js/bg.js"></script>
-  
+  <script is:inline src="/js/vh-fix.js"></script>
+
   <!-- HERO -->
-  <section class="relative h-lvh w-full">
+  <section class="relative hero-height w-full">
     <div id="planetcont" class='animate absolute inset-0 top-1/4 overflow-hidden'>
       <div id="crescent" class='absolute top-0 left-1/2 -translate-x-1/2 w-[250vw] min-h-[100svh] aspect-square rounded-full p-[1px] bg-gradient-to-b from-black/25 dark:from-white/75 from-0% to-transparent to-5%'>
         <div id="planet" class='w-full h-full bg-white dark:bg-black rounded-full p-[1px] overflow-hidden flex justify-center'>
@@ -77,8 +78,9 @@ const stack = [
         </div>
       </div>
     </div>
-    <div class="hero-text fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-10">
-      <div class='relative pointer-events-auto p-5 text-center'>
+    <div class="animate absolute h-full w-full flex items-center justify-center">
+      <div class='relative w-full h-full flex items-center justify-center'>
+        <div class='p-5 text-center'>
           <p class='animated text-2xl md:text-3xl lg:text-4xl font-bold text-black dark:text-white'>
             LowC0de
           </p>
@@ -93,6 +95,7 @@ const stack = [
               О проекте
             </a>
           </div>
+        </div>
       </div>
     </div>
   </section> 
